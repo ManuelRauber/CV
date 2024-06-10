@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +8,6 @@ import { RouterOutlet } from '@angular/router';
   imports: [RouterOutlet],
   templateUrl: './root.component.html',
   styleUrl: './root.component.css',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class RootComponent {}

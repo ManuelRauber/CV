@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'app-block',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './block.component.html',
   styleUrl: './block.component.css',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class BlockComponent {}
