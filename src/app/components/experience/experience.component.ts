@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-experience',
@@ -8,4 +8,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrl: './experience.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ExperienceComponent {}
+export class ExperienceComponent {
+  backgroundImageUrl = input<string>();
+}
