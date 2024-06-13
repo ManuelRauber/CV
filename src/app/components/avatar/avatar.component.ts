@@ -8,6 +8,7 @@ import { Component, input } from '@angular/core';
   styleUrl: './avatar.component.css',
 })
 export class AvatarComponent {
-  url = input.required();
-  alt = input.required();
+  url = input.required<string>();
+  alt = input.required<string>();
+  isSmall = input(false);
 }

@@ -1,5 +1,8 @@
 <img
-  class="size-20 rounded-full border-2 border-white object-cover object-center shadow-sm"
+  class="rounded-full border-2 border-white object-cover object-center shadow-sm unresponsive"
+  [class.size-20]="!isSmall()"
+  [class.size-12]="isSmall()"
+  [class.p-1]="isSmall()"
   [src]="url()"
-  alt="alt"
+  [alt]="alt()"
 />
