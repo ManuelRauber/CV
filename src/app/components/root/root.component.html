@@ -1,0 +1,99 @@
+<main class="mx-auto my-4 max-w-xl px-4 lg:max-w-5xl">
+  <div class="grid grid-cols-1 gap-4 lg:grid-cols-3">
+    <div class="space-y-4">
+      <app-block class="space-y-4">
+        <app-block-avatar-with-background alt="Bug-A-Ball" url="bug-a-ball.jpg">
+          <app-avatar alt="Manuel Rauber" url="MR2017-square.png"></app-avatar>
+        </app-block-avatar-with-background>
+        <app-block-name>
+          <ng-container name>Manuel Rauber</ng-container>
+          <ng-container position>Full Stack Developer | Germany</ng-container>
+        </app-block-name>
+        <app-block-content class="space-y-4">
+          <p>
+            Full Stack Developer with {{ yearsOfExperience() }}+ years of
+            experience.
+          </p>
+
+          <app-chip-list>
+            <app-chip>Angular</app-chip>
+            <app-chip>Flutter</app-chip>
+            <app-chip>Unity</app-chip>
+            <app-chip>.NET</app-chip>
+            <app-chip>TypeScript</app-chip>
+            <app-chip>C&sharp;</app-chip>
+            <app-chip>Dart</app-chip>
+            <app-chip>Git</app-chip>
+            <app-chip>TeamCity</app-chip>
+            <app-chip>CI/CD</app-chip>
+          </app-chip-list>
+        </app-block-content>
+      </app-block>
+      <app-block class="space-y-4">
+        <app-block-headline>About me</app-block-headline>
+        <app-block-content class="space-y-4">
+          <p>
+            I am Manu, a Full Stack Developer from Zweibrücken, Germany. I am
+            passionate about sharing knowledge through conferences, blogs, and
+            publications, and thrive on mentoring other developers.
+          </p>
+          <app-divider />
+          <app-icon-link-list>
+            <app-icon-link
+              [icon]="faEnvelope"
+              url="mailto:rauber.manuel@gmail.com"
+              >rauber.manuel&#64;gmail.com
+            </app-icon-link>
+            <app-icon-link
+              [icon]="faExternalLink"
+              url="https://manuel-rauber.com"
+              >Blog &#64; manuel-rauber.com
+            </app-icon-link>
+            <app-icon-link
+              [icon]="faGithub"
+              url="https://github.com/manuelrauber"
+              >GitHub</app-icon-link
+            >
+            <app-icon-link
+              [icon]="faLinkedin"
+              url="https://linkedin.com/in/manuelrauber"
+              >LinkedIn</app-icon-link
+            >
+          </app-icon-link-list>
+        </app-block-content>
+      </app-block>
+      <app-block class="space-y-4">
+        <app-block-headline>Information</app-block-headline>
+
+        <app-block-content>
+          <app-key-value-list
+            [data]="[
+              ['Location', 'Zweibrücken, Germany'],
+              ['Experience', yearsOfExperience() + '+ years'],
+              ['Languages', 'German, English'],
+              [
+                'Recognitions',
+                'Microsoft MVP 2016-2020<br>Unity Insider since 2020',
+              ],
+              ['Relocation', 'On request<br>home office preferred'],
+            ]"
+          />
+        </app-block-content>
+      </app-block>
+    </div>
+    <div class="lg:col-span-2 space-y-4">
+      <app-block>
+        <app-block-navigation>
+          <app-tab-bar>
+            <app-tab-bar-router-button [link]="['/']"
+              >Resume</app-tab-bar-router-button
+            >
+            <!--<app-tab-bar-router-button [link]="['/publications']">Publications</app-tab-bar-router-button>
+            <app-tab-bar-router-button [link]="['/blog']">Blog</app-tab-bar-router-button>-->
+          </app-tab-bar>
+        </app-block-navigation>
+      </app-block>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</main>

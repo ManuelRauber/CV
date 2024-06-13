@@ -1,0 +1,313 @@
+<app-block class="space-y-4">
+  <app-block-headline>Experience</app-block-headline>
+  <div class="space-y-1.5">
+    <app-experience>
+      <app-avatar
+        [isSmall]="true"
+        alt="MindKey Software A/S"
+        avatar
+        url="mindkey.png"
+      ></app-avatar>
+      <ng-container headline>Lead Software Engineer</ng-container>
+      <ng-container subline>
+        <app-icon-text [icon]="faBriefcase">MindKey Software A/S</app-icon-text>
+        <app-icon-text [icon]="faLocationPin"
+          >Copenhagen, Denmark</app-icon-text
+        >
+        <app-icon-text [icon]="faCalendar">{{
+          "Apr 2023" | calculateDuration
+        }}</app-icon-text>
+      </ng-container>
+      <app-chip>Full-time</app-chip>
+      <app-chip-list>
+        <app-chip>Angular</app-chip>
+        <app-chip>Flutter</app-chip>
+        <app-chip>Azure DevOps</app-chip>
+        <app-chip>Docusaurus</app-chip>
+      </app-chip-list>
+
+      <ul class="list-disc max-sm:ml-4">
+        <li>
+          Developing the HR companion apps for
+          <app-icon-link
+            [icon]="faAndroid"
+            url="https://play.google.com/store/apps/details?id=com.mindkey.app"
+            >Android
+          </app-icon-link>
+          and
+          <app-icon-link
+            [icon]="faApple"
+            url="https://apps.apple.com/us/app/mindkey/id1559239631"
+            >iOS</app-icon-link
+          >
+          with Flutter.
+        </li>
+        <li>
+          Development of the Web Components with Angular Elements to allow
+          integration of the MindKey Recruiting solution in third-party sites.
+        </li>
+        <li>
+          Development of the documentation base used for customer documentation
+          with Docusaurus.
+        </li>
+      </ul>
+    </app-experience>
+    <app-experience>
+      <app-avatar
+        [isSmall]="true"
+        alt="Boundfox Studios"
+        avatar
+        url="boundfox-studios.png"
+      ></app-avatar>
+      <ng-container headline>Founder</ng-container>
+      <ng-container subline>
+        <app-icon-text [icon]="faBriefcase">Boundfox Studios</app-icon-text>
+        <app-icon-text [icon]="faLocationPin"
+          >Zweibrücken, Germany</app-icon-text
+        >
+        <app-icon-text [icon]="faCalendar">{{
+          "Mar 2020" | calculateDuration
+        }}</app-icon-text>
+      </ng-container>
+      <app-chip>Freelance</app-chip>
+      <app-chip-list>
+        <app-chip>Unity</app-chip>
+      </app-chip-list>
+
+      <ul class="list-disc max-sm:ml-4">
+        <li>
+          Development and publishing of
+          <app-link url="https://bugaball.com">Bug-A-Ball</app-link>
+          - a game for Android and iOS.
+        </li>
+        <li>
+          Creating tutorial videos on
+          <app-icon-link
+            [icon]="faYoutube"
+            url="https://youtube.com/@BoundfoxStudios"
+            >YouTube</app-icon-link
+          >
+          (~17.900 subs).
+        </li>
+        <li>
+          Blogging about Unity on my
+          <app-icon-link
+            [icon]="faExternalLink"
+            url="https://manuel-rauber.com/tag/unity/"
+            >personal blog
+          </app-icon-link>
+          .
+        </li>
+        <li>
+          Publishing articles in German magazines, e.g.
+          <app-link
+            url="https://entwickler.de/game-development/user-interface-und-deployment-in-unity"
+            >Windows Developer
+          </app-link>
+          .
+        </li>
+      </ul>
+    </app-experience>
+
+    <div class="flex py-2">
+      <div class="flex flex-1 items-center">
+        <app-divider class="w-full" />
+      </div>
+      <div class="mx-4 text-gray-600">History</div>
+      <div class="flex flex-1 items-center">
+        <app-divider class="w-full" />
+      </div>
+    </div>
+
+    <app-experience>
+      <app-avatar
+        [isSmall]="true"
+        alt="Hackerstolz e.V."
+        avatar
+        url="hackerstolz.jpeg"
+      ></app-avatar>
+      <ng-container headline>Member of the board</ng-container>
+      <ng-container subline>
+        <app-icon-text [icon]="faBriefcase">Hackerstolz e.V.</app-icon-text>
+        <app-icon-text [icon]="faLocationPin">Mannheim, Germany</app-icon-text>
+        <app-icon-text [icon]="faCalendar">{{
+          "May 2017" | calculateDuration: "Dec 2020"
+        }}</app-icon-text>
+      </ng-container>
+      <app-chip>Hobby</app-chip>
+
+      <p>
+        Hackerstolz is a young association originating from the metropolitan
+        area Rhine-Neckar.
+      </p>
+
+      <ul class="list-disc max-sm:ml-4 mt-4">
+        <li>
+          Organized and run two hackathons "Inno&lcub;Hacks&rcub;" with around
+          100 participants.
+        </li>
+        <li>
+          Organized and run a monthly Hackschool with around 40 participants per
+          session.
+        </li>
+        <li>Helped organizing and running other hackathons from the club.</li>
+      </ul>
+    </app-experience>
+    <app-experience>
+      <app-avatar
+        [isSmall]="true"
+        alt="Thinktecture AG"
+        avatar
+        url="thinktecture.jpg"
+      ></app-avatar>
+      <ng-container headline>Software Developer Consultant</ng-container>
+      <ng-container subline>
+        <app-icon-text [icon]="faBriefcase">Thinktecture AG</app-icon-text>
+        <app-icon-text [icon]="faLocationPin">Karlsruhe, Germany</app-icon-text>
+        <app-icon-text [icon]="faCalendar">{{
+          "Oct 2014" | calculateDuration: "Mar 2023"
+        }}</app-icon-text>
+      </ng-container>
+      <app-chip>Full-time</app-chip>
+      <app-chip-list>
+        <app-chip>Angular</app-chip>
+        <app-chip>.NET</app-chip>
+        <app-chip>Node.js</app-chip>
+      </app-chip-list>
+
+      <ul class="list-disc max-sm:ml-4">
+        <li>
+          Consulting with customers' software developers and architects on the
+          use of the latest software development technologies.
+        </li>
+        <li>Hands-on support for customers' development teams.</li>
+        <li>Developing critical software components to production maturity.</li>
+        <li>
+          Developing prototypes and proof-of-concept systems for internal use
+          and customers.
+        </li>
+        <li>
+          Ongoing, independent learning of new development trends and
+          technologies, and creating content for knowledge sharing.
+        </li>
+        <li>
+          Conducting workshops on software architecture for new and existing
+          customers.
+        </li>
+        <li>
+          Performing architecture and code reviews of customers' software
+          products.
+        </li>
+        <li>
+          Delivering presentations (both in-person and online) on specialized
+          topics at well-known national and international software development
+          conferences.
+        </li>
+        <li>
+          Sharing experience and expertise in technical articles for publication
+          in various media outlets.
+        </li>
+      </ul>
+    </app-experience>
+    <app-experience>
+      <div avatar class="mx-6"></div>
+      <ng-container headline>Founder</ng-container>
+      <ng-container subline>
+        <app-icon-text [icon]="faBriefcase">Rauber IT</app-icon-text>
+        <app-icon-text [icon]="faLocationPin"
+          >Oberharmersbach, Germany</app-icon-text
+        >
+        <app-icon-text [icon]="faCalendar">{{
+          "Mar 2013" | calculateDuration: "Dec 2021"
+        }}</app-icon-text>
+      </ng-container>
+      <app-chip>Freelance</app-chip>
+      <app-chip-list>
+        <app-chip>Delphi</app-chip>
+        <app-chip>Wordpress</app-chip>
+        <app-chip>PHP</app-chip>
+      </app-chip-list>
+
+      <ul class="list-disc max-sm:ml-4">
+        <li>
+          Development of custom website or Wordpress solutions for small
+          businesses in my hometown.
+        </li>
+        <li>
+          Development of a business application in Delphi to calculate air
+          conditioning systems.
+        </li>
+      </ul>
+    </app-experience>
+    <app-experience>
+      <app-avatar
+        [isSmall]="true"
+        alt="cheeseware GbR"
+        avatar
+        url="cheeseware.png"
+      ></app-avatar>
+      <ng-container headline>Founder</ng-container>
+      <ng-container subline>
+        <app-icon-text [icon]="faBriefcase">cheeseware GbR</app-icon-text>
+        <app-icon-text [icon]="faLocationPin"
+          >Leimersheim, Germany</app-icon-text
+        >
+        <app-icon-text [icon]="faCalendar">{{
+          "Jul 2012" | calculateDuration: "Dec 2020"
+        }}</app-icon-text>
+      </ng-container>
+      <app-chip>Freelance</app-chip>
+      <app-chip-list>
+        <app-chip>Angular</app-chip>
+        <app-chip>.NET</app-chip>
+      </app-chip-list>
+
+      Founded during our studies, my classmate
+      <app-link url="https://christianliebel.de">Christian Liebel</app-link>
+      and I implemented various software projects based on .NET and web
+      technologies. Our game "Geodart" for Windows 8 reached over 120,000
+      downloads in the newly launched Windows Store.
+    </app-experience>
+    <app-experience>
+      <app-avatar
+        [isSmall]="true"
+        alt="Smarthouse Media GmbH"
+        avatar
+        url="smarthouse.jpeg"
+      ></app-avatar>
+      <ng-container headline
+        >Junior Software Developer, DHBW Student</ng-container
+      >
+      <ng-container subline>
+        <app-icon-text [icon]="faBriefcase"
+          >Smarthouse Media GmbH</app-icon-text
+        >
+        <app-icon-text [icon]="faLocationPin">Karlsruhe, Germany</app-icon-text>
+        <app-icon-text [icon]="faCalendar">{{
+          "Jul 2011" | calculateDuration: "Sep 2014"
+        }}</app-icon-text>
+      </ng-container>
+      <app-chip>Full-time</app-chip>
+      <app-chip-list>
+        <app-chip>.NET</app-chip>
+      </app-chip-list>
+
+      <p>
+        Cooperative education with the Duale Hochschule Baden-Württemberg
+        Karlsruhe and Smarthouse Media GmbH.
+      </p>
+      <ul class="list-disc max-sm:ml-4 mt-4">
+        <li>
+          Developed a prototype for an "in-house YouTube" with video encoding
+          and video player.
+        </li>
+        <li>
+          Developed a concept for multi-gigabyte log analysis with LogStash.
+        </li>
+        <li>
+          Developed a prototype for a cross-platform application with Xamarin.
+        </li>
+      </ul>
+    </app-experience>
+  </div>
+</app-block>
