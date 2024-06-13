@@ -8,6 +8,6 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class BlockAvatarWithBackgroundComponent {
-  url = input.required();
-  alt = input.required();
+  url = input.required<string>();
+  alt = input.required<string>();
 }
