@@ -24,11 +24,33 @@ export interface GhostApiResult<TPostModel> {
   data: TPostModel[];
 }
 
+const latestPostCacheKey = 'latest-posts';
+
 @Injectable({
   providedIn: 'root',
 })
 export class BlogService {
-  async getLatestPosts(limit: number = 8): Promise<GhostApiResult<LatestPost> | undefined> {
+  private cache: { [key: string]: GhostApiResult<unknown> } = {};
+
+  async preloadLatestPosts(): Promise<void> {
+    const latestPosts = await this.getLatestPosts();
+
+    if (!latestPosts) {
+      return;
+    }
+
+    this.cache[latestPostCacheKey] = latestPosts;
+  }
+
+  async getLatestPosts(limit: number = 8, force: boolean = false): Promise<GhostApiResult<LatestPost> | undefined> {
+    if (force) {
+      delete this.cache[latestPostCacheKey];
+    }
+
+    if (this.cache[latestPostCacheKey]) {
+      return this.cache[latestPostCacheKey] as GhostApiResult<LatestPost>;
+    }
+
     const api = new TSGhostContentAPI(
       'https://manus-techblog.ghost.io',
       'fb456f9ef15b05b791f001a3e7', // this ends up on the website anyway, so we can set it here directly.
@@ -57,7 +79,7 @@ export class BlogService {
       return;
     }
 
-    return {
+    const result = {
       meta: {
         ...posts.meta,
         pagination: {
@@ -67,5 +89,9 @@ export class BlogService {
       },
       data: posts.data as LatestPost[],
     };
+
+    this.cache[latestPostCacheKey] = result;
+
+    return result;
   }
 }
