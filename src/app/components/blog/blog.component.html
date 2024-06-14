@@ -7,7 +7,7 @@
     <div class="space-y-1.5">
       @for (post of posts.data; track post.published_at) {
         <a class="block" target="_blank" [href]="post.url">
-          <app-experience>
+          <app-experience class="hover:bg-gray-100">
             <ng-container headline>{{ post.title }}</ng-container>
             <ng-container subline>
               <app-icon-text [icon]="faTag">{{ post.primary_tag.name }} </app-icon-text>
