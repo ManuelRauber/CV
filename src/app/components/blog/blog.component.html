@@ -20,18 +20,10 @@
         </a>
       }
     </div>
-    <div class="flex pb-2">
-      <div class="flex flex-1 items-center">
-        <app-divider class="w-full" />
-      </div>
-      <div class="mx-4 text-gray-600">
-        {{ posts.meta.pagination.total - posts.meta.pagination.limit }} more posts on
-        <app-link url="https://manuel-rauber.com">manuel-rauber.com</app-link>
-      </div>
-      <div class="flex flex-1 items-center">
-        <app-divider class="w-full" />
-      </div>
-    </div>
+    <app-text-divider class="pb-2">
+      {{ posts.meta.pagination.total - posts.meta.pagination.limit }} more posts on
+      <app-link url="https://manuel-rauber.com">manuel-rauber.com</app-link>
+    </app-text-divider>
   } @else {
     <app-block-content> Loading blog entries...</app-block-content>
   }

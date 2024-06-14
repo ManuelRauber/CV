@@ -13,6 +13,7 @@ import { IconLinkComponent } from '../icon-link-list/icon-link/icon-link.compone
 import { faAndroid, faApple, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { ChipListComponent } from '../chip-list/chip-list.component';
 import { LinkComponent } from '../link/link.component';
+import { TextDividerComponent } from '../text-divider/text-divider.component';
 
 @Component({
   selector: 'app-resume',
@@ -30,6 +31,7 @@ import { LinkComponent } from '../link/link.component';
     IconLinkComponent,
     ChipListComponent,
     LinkComponent,
+    TextDividerComponent,
   ],
   templateUrl: './resume.component.html',
   styleUrl: './resume.component.css',

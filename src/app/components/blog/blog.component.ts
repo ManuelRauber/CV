@@ -9,6 +9,7 @@ import { BlockContentComponent } from '../block/block-content/block-content.comp
 import { IconTextComponent } from '../icon-text/icon-text.component';
 import { faCalendar, faClock, faTag } from '@fortawesome/free-solid-svg-icons';
 import { DividerComponent } from '../divider/divider.component';
+import { TextDividerComponent } from '../text-divider/text-divider.component';
 
 @Component({
   selector: 'app-blog',
@@ -23,6 +24,7 @@ import { DividerComponent } from '../divider/divider.component';
     IconTextComponent,
     DatePipe,
     DividerComponent,
+    TextDividerComponent,
   ],
   templateUrl: './blog.component.html',
   styleUrl: './blog.component.css',
