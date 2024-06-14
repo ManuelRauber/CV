@@ -8,8 +8,7 @@ export const routes: Routes = [
   },
   {
     path: 'publications',
-    loadComponent: () =>
-      import('./components/publications/publications.component'),
+    loadComponent: () => import('./components/publications/publications.component'),
   },
   {
     path: 'blog',

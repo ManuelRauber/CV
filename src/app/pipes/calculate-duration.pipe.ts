@@ -8,9 +8,7 @@ import { DateTime } from 'luxon';
 export class CalculateDurationPipe implements PipeTransform {
   transform(from: string, to?: string): string {
     const fromDateTime = DateTime.fromFormat(from, 'LLL yyyy');
-    const toDateTime = to
-      ? DateTime.fromFormat(to, 'LLL yyyy')
-      : DateTime.now();
+    const toDateTime = to ? DateTime.fromFormat(to, 'LLL yyyy') : DateTime.now();
 
     const difference = toDateTime.diff(fromDateTime, ['years', 'months']);
     const differenceText = difference.toHuman({

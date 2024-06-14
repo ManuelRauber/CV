@@ -1,8 +1,5 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
-import {
-  FaIconComponent,
-  IconDefinition,
-} from '@fortawesome/angular-fontawesome';
+import { FaIconComponent, IconDefinition } from '@fortawesome/angular-fontawesome';
 import { LinkComponent } from '../../link/link.component';
 
 @Component({

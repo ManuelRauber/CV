@@ -28,9 +28,7 @@ export interface GhostApiResult<TPostModel> {
   providedIn: 'root',
 })
 export class BlogService {
-  async getLatestPosts(
-    limit: number = 8,
-  ): Promise<GhostApiResult<LatestPost> | undefined> {
+  async getLatestPosts(limit: number = 8): Promise<GhostApiResult<LatestPost> | undefined> {
     const api = new TSGhostContentAPI(
       'https://manus-techblog.ghost.io',
       'fb456f9ef15b05b791f001a3e7', // this ends up on the website anyway, so we can set it here directly.
@@ -64,10 +62,7 @@ export class BlogService {
         ...posts.meta,
         pagination: {
           ...posts.meta.pagination,
-          limit:
-            posts.meta.pagination.limit === 'all'
-              ? posts.meta.pagination.total
-              : posts.meta.pagination.limit,
+          limit: posts.meta.pagination.limit === 'all' ? posts.meta.pagination.total : posts.meta.pagination.limit,
         },
       },
       data: posts.data as LatestPost[],

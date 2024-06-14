@@ -1,7 +1,6 @@
 <app-block class="space-y-4">
   <app-block-headline
-    >Blog -
-    <app-link url="https://manuel-rauber.com">manuel-rauber.com</app-link>
+    ><span>Blog - <app-link url="https://manuel-rauber.com">manuel-rauber.com</app-link></span>
   </app-block-headline>
 
   @if (posts(); as posts) {
@@ -11,15 +10,9 @@
           <app-experience>
             <ng-container headline>{{ post.title }}</ng-container>
             <ng-container subline>
-              <app-icon-text [icon]="faTag">{{
-                post.primary_tag.name
-              }}</app-icon-text>
-              <app-icon-text [icon]="faCalendar">{{
-                post.published_at | date
-              }}</app-icon-text>
-              <app-icon-text [icon]="faClock"
-                >{{ post.reading_time }} min</app-icon-text
-              >
+              <app-icon-text [icon]="faTag">{{ post.primary_tag.name }} </app-icon-text>
+              <app-icon-text [icon]="faCalendar">{{ post.published_at | date }} </app-icon-text>
+              <app-icon-text [icon]="faClock">{{ post.reading_time }} min </app-icon-text>
             </ng-container>
 
             {{ post.excerpt }}
@@ -32,8 +25,7 @@
         <app-divider class="w-full" />
       </div>
       <div class="mx-4 text-gray-600">
-        {{ posts.meta.pagination.total - posts.meta.pagination.limit }} more
-        posts on
+        {{ posts.meta.pagination.total - posts.meta.pagination.limit }} more posts on
         <app-link url="https://manuel-rauber.com">manuel-rauber.com</app-link>
       </div>
       <div class="flex flex-1 items-center">
@@ -41,6 +33,6 @@
       </div>
     </div>
   } @else {
-    <app-block-content> Loading blog entries... </app-block-content>
+    <app-block-content> Loading blog entries...</app-block-content>
   }
 </app-block>
