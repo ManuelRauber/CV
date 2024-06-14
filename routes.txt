@@ -1,2 +1,2 @@
-/#/blog
-/#/publications
+/blog
+/publications
