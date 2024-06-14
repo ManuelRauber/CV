@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, ElementRef, inject, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
@@ -11,14 +11,4 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class TabBarRouterButtonComponent {
   link = input.required<any[]>();
-
-  private elementRef = inject(ElementRef<HTMLElement>);
-
-  protected scrollToSelf() {
-    this.elementRef.nativeElement.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-      inline: 'nearest',
-    });
-  }
 }
