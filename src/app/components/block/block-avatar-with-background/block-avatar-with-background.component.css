@@ -1,3 +1,5 @@
+@reference '../../../../styles.css';
+
 :host {
   @apply aspect-h-2 aspect-w-3 -m-1.5 block overflow-hidden;
 }

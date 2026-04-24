@@ -1,3 +1,5 @@
+@reference '../../../../styles.css';
+
 :host {
   @apply block rounded-md bg-gray-50 p-4 leading-relaxed text-gray-600;
 }
