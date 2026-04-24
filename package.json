@@ -25,7 +25,7 @@
     "@fortawesome/angular-fontawesome": "~4.0.0",
     "@fortawesome/free-brands-svg-icons": "^7.2.0",
     "@fortawesome/free-solid-svg-icons": "^7.2.0",
-    "@ts-ghost/content-api": "~4.1.0",
+    "@ts-ghost/content-api": "~5.0.0",
     "express": "^5.2.1",
     "luxon": "~3.7.2",
     "rxjs": "~7.8.2",
