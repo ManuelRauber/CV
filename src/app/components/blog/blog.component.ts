@@ -13,7 +13,6 @@ import { TextDividerComponent } from '../text-divider/text-divider.component';
 
 @Component({
   selector: 'app-blog',
-  standalone: true,
   imports: [
     BlockComponent,
     BlockHeadlineComponent,

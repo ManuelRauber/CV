@@ -4,7 +4,6 @@ import { LinkComponent } from '../../link/link.component';
 
 @Component({
   selector: 'app-icon-link',
-  standalone: true,
   imports: [FaIconComponent, LinkComponent],
   templateUrl: './icon-link.component.html',
   styleUrl: './icon-link.component.css',

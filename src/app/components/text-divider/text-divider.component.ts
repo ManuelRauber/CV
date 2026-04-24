@@ -3,7 +3,6 @@ import { DividerComponent } from '../divider/divider.component';
 
 @Component({
   selector: 'app-text-divider',
-  standalone: true,
   imports: [DividerComponent],
   templateUrl: './text-divider.component.html',
   styleUrl: './text-divider.component.css',

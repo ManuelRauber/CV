@@ -1,4 +1,4 @@
-import { APP_INITIALIZER, ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
+import { ApplicationConfig, provideZoneChangeDetection, inject, provideAppInitializer } from '@angular/core';
 import { provideRouter, withViewTransitions } from '@angular/router';
 
 import { routes } from './app.routes';
@@ -10,16 +10,14 @@ export const appConfig: ApplicationConfig = {
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes, withViewTransitions()),
     provideClientHydration(),
-    {
-      provide: APP_INITIALIZER,
-      useFactory: (blogService: BlogService) => {
+    provideAppInitializer(() => {
+      const initializerFn = ((blogService: BlogService) => {
         return async () => {
           await blogService.preloadLatestPosts();
           return true;
         };
-      },
-      deps: [BlogService],
-      multi: true,
-    },
+      })(inject(BlogService));
+      return initializerFn();
+    }),
   ],
 };

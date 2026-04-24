@@ -3,7 +3,6 @@ import { FaIconComponent, IconDefinition } from '@fortawesome/angular-fontawesom
 
 @Component({
   selector: 'app-icon-text',
-  standalone: true,
   imports: [FaIconComponent],
   templateUrl: './icon-text.component.html',
   styleUrl: './icon-text.component.css',

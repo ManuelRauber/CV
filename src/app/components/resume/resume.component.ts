@@ -17,7 +17,6 @@ import { TextDividerComponent } from '../text-divider/text-divider.component';
 
 @Component({
   selector: 'app-resume',
-  standalone: true,
   imports: [
     BlockHeadlineComponent,
     BlockContentComponent,

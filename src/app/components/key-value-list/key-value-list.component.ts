@@ -3,7 +3,6 @@ import { TrustHtmlPipe } from '../../pipes/trust-html.pipe';
 
 @Component({
   selector: 'app-key-value-list',
-  standalone: true,
   imports: [TrustHtmlPipe],
   templateUrl: './key-value-list.component.html',
   styleUrl: './key-value-list.component.css',

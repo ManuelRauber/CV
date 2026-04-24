@@ -20,7 +20,6 @@ import { TabBarRouterButtonComponent } from '../tab-bar/tab-bar-router-button/ta
 
 @Component({
   selector: 'app-root',
-  standalone: true,
   imports: [
     RouterOutlet,
     BlockComponent,

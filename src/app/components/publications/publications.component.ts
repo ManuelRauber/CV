@@ -16,7 +16,6 @@ import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 
 @Component({
   selector: 'app-projects',
-  standalone: true,
   imports: [
     BlockComponent,
     BlockHeadlineComponent,
