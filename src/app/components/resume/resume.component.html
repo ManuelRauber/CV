@@ -2,6 +2,25 @@
   <app-block-headline>Experience</app-block-headline>
   <div class="space-y-1.5">
     <app-experience>
+      <app-avatar [isSmall]="true" alt="Thinktecture AG" avatar url="thinktecture.jpg"></app-avatar>
+      <ng-container headline>Code Wizard</ng-container>
+      <ng-container subline>
+        <app-icon-text [icon]="faBriefcase">Thinktecture AG</app-icon-text>
+        <app-icon-text [icon]="faLocationPin">Karlsruhe, Germany</app-icon-text>
+        <app-icon-text [icon]="faCalendar">{{ 'Jan 2026' | calculateDuration }} </app-icon-text>
+      </ng-container>
+      <app-chip>Full-time</app-chip>
+      <app-chip-list>
+        <app-chip>Angular</app-chip>
+        <app-chip>.NET</app-chip>
+        <app-chip>Node.js</app-chip>
+      </app-chip-list>
+
+      <ul class="list-disc max-sm:ml-4">
+        <li>I'm a Code Wizard!</li>
+      </ul>
+    </app-experience>
+    <app-experience>
       <app-avatar [isSmall]="true" alt="MindKey Software A/S" avatar url="mindkey.png"></app-avatar>
       <ng-container headline>Lead Software Engineer</ng-container>
       <ng-container subline>
