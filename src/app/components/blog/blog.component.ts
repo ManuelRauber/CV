@@ -3,12 +3,11 @@ import { BlogService, GhostApiResult, LatestPost } from './blog.service';
 import { BlockComponent } from '../block/block.component';
 import { LinkComponent } from '../link/link.component';
 import { BlockHeadlineComponent } from '../block/block-headline/block-headline.component';
-import { DatePipe, JsonPipe } from '@angular/common';
+import { DatePipe } from '@angular/common';
 import { ExperienceComponent } from '../experience/experience.component';
 import { BlockContentComponent } from '../block/block-content/block-content.component';
 import { IconTextComponent } from '../icon-text/icon-text.component';
 import { faCalendar, faClock, faTag } from '@fortawesome/free-solid-svg-icons';
-import { DividerComponent } from '../divider/divider.component';
 import { TextDividerComponent } from '../text-divider/text-divider.component';
 
 @Component({
@@ -17,12 +16,10 @@ import { TextDividerComponent } from '../text-divider/text-divider.component';
     BlockComponent,
     BlockHeadlineComponent,
     LinkComponent,
-    JsonPipe,
     ExperienceComponent,
     BlockContentComponent,
     IconTextComponent,
     DatePipe,
-    DividerComponent,
     TextDividerComponent,
   ],
   templateUrl: './blog.component.html',
