@@ -1,6 +1,14 @@
 {
+  "trailingComma": "all",
   "arrowParens": "avoid",
-  "printWidth": 120,
+  "bracketSameLine": false,
+  "semi": true,
   "singleQuote": true,
-  "trailingComma": "all"
+  "singleAttributePerLine": true,
+  "quoteProps": "as-needed",
+  "plugins": [
+    "prettier-plugin-css-order",
+    "prettier-plugin-organize-attributes",
+    "prettier-plugin-tailwindcss"
+  ]
 }

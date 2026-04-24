@@ -42,7 +42,10 @@ export class BlogService {
     this.cache[latestPostCacheKey] = latestPosts;
   }
 
-  async getLatestPosts(limit: number = 8, force: boolean = false): Promise<GhostApiResult<LatestPost> | undefined> {
+  async getLatestPosts(
+    limit: number = 8,
+    force: boolean = false,
+  ): Promise<GhostApiResult<LatestPost> | undefined> {
     if (force) {
       delete this.cache[latestPostCacheKey];
     }
@@ -84,7 +87,10 @@ export class BlogService {
         ...posts.meta,
         pagination: {
           ...posts.meta.pagination,
-          limit: posts.meta.pagination.limit === 'all' ? posts.meta.pagination.total : posts.meta.pagination.limit,
+          limit:
+            posts.meta.pagination.limit === 'all'
+              ? posts.meta.pagination.total
+              : posts.meta.pagination.limit,
         },
       },
       data: posts.data as LatestPost[],

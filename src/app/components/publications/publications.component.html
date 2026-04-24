@@ -3,7 +3,12 @@
 
   <div class="space-y-1.5">
     <app-experience>
-      <app-avatar [isSmall]="true" alt="Bug-A-Ball" avatar url="bug-a-ball-ball.png"></app-avatar>
+      <app-avatar
+        [isSmall]="true"
+        alt="Bug-A-Ball"
+        avatar
+        url="bug-a-ball-ball.png"
+      ></app-avatar>
       <ng-container headline>Bug-A-Ball</ng-container>
       <ng-container subline>
         <app-icon-text [icon]="faAndroid">Android</app-icon-text>
@@ -11,7 +16,11 @@
         <app-icon-text [icon]="faCalendar">Aug 2021</app-icon-text>
       </ng-container>
       <app-chip
-        ><app-icon-link [icon]="faExternalLink" url="https://bugaball.com">bug-a-ball.com</app-icon-link></app-chip
+        ><app-icon-link
+          [icon]="faExternalLink"
+          url="https://bugaball.com"
+          >bug-a-ball.com</app-icon-link
+        ></app-chip
       >
       <app-chip-list>
         <app-chip>Game</app-chip>
@@ -20,27 +29,41 @@
       </app-chip-list>
 
       <p>
-        Development of a mobile game for Android and iOS using the Unity game engine. In Bug-A-Ball you’re rollin’
-        through different worlds and levels and you’ll collect plenty of gold and diamonds. Unlock exclusive skins and
-        personalize your ball to show anyone who has the best ball. Dangerous bugs can change your game completely.
+        Development of a mobile game for Android and iOS using the Unity game
+        engine. In Bug-A-Ball you’re rollin’ through different worlds and levels
+        and you’ll collect plenty of gold and diamonds. Unlock exclusive skins
+        and personalize your ball to show anyone who has the best ball.
+        Dangerous bugs can change your game completely.
       </p>
     </app-experience>
     <app-experience>
-      <app-avatar [isSmall]="true" alt="Geodart" avatar url="geodart.png"></app-avatar>
+      <app-avatar
+        [isSmall]="true"
+        alt="Geodart"
+        avatar
+        url="geodart.png"
+      ></app-avatar>
       <ng-container headline>Geodart</ng-container>
       <ng-container subline>
         <app-icon-text [icon]="faWindows">Windows Store</app-icon-text>
       </ng-container>
 
       <p>
-        Together with <app-link url="https://christianliebel.de">Christian Liebel</app-link> we developed one of the
-        first games available for the newly launched Windows 8 Store. The game reached over 120.000 downloads despite
-        being available in German language only.
+        Together with
+        <app-link url="https://christianliebel.de">Christian Liebel</app-link>
+        we developed one of the first games available for the newly launched
+        Windows 8 Store. The game reached over 120.000 downloads despite being
+        available in German language only.
       </p>
     </app-experience>
     <app-experience>
-      <div avatar class="mx-6"></div>
-      <ng-container headline>Cross-Plattform: Entwicklung und Anwendung</ng-container>
+      <div
+        class="mx-6"
+        avatar
+      ></div>
+      <ng-container headline
+        >Cross-Plattform: Entwicklung und Anwendung</ng-container
+      >
       <ng-container subline>
         <app-icon-text [icon]="faCalendar">Sep 2017</app-icon-text>
       </ng-container>
@@ -52,12 +75,17 @@
         ></app-chip
       >
 
-      <p>Mini book about cross-platform development with Angular, Cordova and Electron.</p>
+      <p>
+        Mini book about cross-platform development with Angular, Cordova and
+        Electron.
+      </p>
     </app-experience>
   </div>
 
   <app-text-divider
     >Find all publications & talks on
-    <app-link url="https://manuel-rauber.com/publications">manuel-rauber.com</app-link>
+    <app-link url="https://manuel-rauber.com/publications"
+      >manuel-rauber.com</app-link
+    >
   </app-text-divider>
 </app-block>

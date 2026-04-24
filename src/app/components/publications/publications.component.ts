@@ -3,8 +3,17 @@ import { BlockComponent } from '../block/block.component';
 import { BlockHeadlineComponent } from '../block/block-headline/block-headline.component';
 import { TextDividerComponent } from '../text-divider/text-divider.component';
 import { LinkComponent } from '../link/link.component';
-import { faAndroid, faApple, faWindows } from '@fortawesome/free-brands-svg-icons';
-import { faBriefcase, faCalendar, faExternalLink, faLocationPin } from '@fortawesome/free-solid-svg-icons';
+import {
+  faAndroid,
+  faApple,
+  faWindows,
+} from '@fortawesome/free-brands-svg-icons';
+import {
+  faBriefcase,
+  faCalendar,
+  faExternalLink,
+  faLocationPin,
+} from '@fortawesome/free-solid-svg-icons';
 import { AvatarComponent } from '../avatar/avatar.component';
 import { ChipComponent } from '../chip-list/chip/chip.component';
 import { ChipListComponent } from '../chip-list/chip-list.component';
